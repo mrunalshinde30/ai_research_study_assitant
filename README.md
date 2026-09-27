@@ -100,31 +100,34 @@ A Cross-Encoder reranks the retrieved chunks.
 The most relevant chunks are provided to Llama 3.2.
 The model generates an answer using the retrieved context.
 The application displays the answer along with source pages.
-🚀 Installation
-1. Clone the repository
+## ⚙️ Installation
+
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/mrunalshinde30/ai_research_study_assistant.git
 cd ai_research_study_assistant
-2. Create a virtual environment
+2. Create and activate a virtual environment
 python -m venv venv
-3. Activate the environment
 
 Windows PowerShell:
 
 venv\Scripts\Activate.ps1
-4. Install dependencies
+3. Install dependencies
 pip install -r requirements.txt
-🦙 Install Ollama
+4. Install and run Ollama
 
-Install Ollama and download the Llama 3.2 model:
+Download Ollama and pull the required model:
 
 ollama pull llama3.2:3b
 
-Make sure Ollama is running before starting the application.
+Make sure Ollama is running.
 
-▶️ Run the Application
+5. Run the application
 streamlit run app.py
 
 The application will open in your browser.
+
 
 💡 Example Questions
 
@@ -180,29 +183,27 @@ Documents are processed on the local machine and the project uses a local LLM th
 
 API keys and local generated files are excluded from Git using .gitignore.
 
-📌 Current Status
-Version 1
- PDF upload
- PDF text extraction
- Text chunking
- Local embeddings
- ChromaDB vector storage
- Semantic retrieval
- MMR retrieval
- Local Llama 3.2 generation
- Source page display
- Cross-Encoder reranking
-Future Improvements
- Chat history
- Multiple PDF support
- Document summarization
- Citation highlighting
- Streaming responses
- Better UI/UX
- Evaluation metrics for retrieval quality
- RAG evaluation using benchmark questions
- Docker deployment
- Cloud deployment
+## 📈 Current Implementation
+
+- PDF upload and text extraction
+- Text chunking and local embeddings
+- ChromaDB vector storage
+- MMR-based retrieval
+- Cross-Encoder reranking
+- Local Llama 3.2 LLM
+- Source page display
+- Streamlit interface
+
+## 🚀 Future Improvements
+
+- Conversational chat history
+- Multiple PDF support
+- Document summarization
+- Better citations
+- Streaming responses
+- RAG evaluation
+- Improved UI/UX
+- Deployment with Docker
 👩‍💻 Author
 
 Mrunal Shinde
