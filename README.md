@@ -37,36 +37,38 @@ Llama 3.2
 Answer + Sources
 
 🛠️ Tech Stack
-Python
-Streamlit
-LangChain
-ChromaDB
-HuggingFace Embeddings
-Sentence Transformers
-Cross-Encoder
-Ollama
-Llama 3.2
-PyPDF
+- Python
+-Streamlit
+-LangChain
+-ChromaDB
+-HuggingFace Embeddings
+-Sentence Transformers
+-Cross-Encoder
+-Ollama
+-Llama 3.2
+-PyPDF
+
 ⚙️ Installation
 1. Clone the repository
-git clone https://github.com/mrunalshinde30/ai_research_study_assistant.git
-cd ai_research_study_assistant
+ git clone https://github.com/mrunalshinde30/ai_research_study_assistant.git
+ cd ai_research_study_assistant
 2. Create a virtual environment
-python -m venv venv
+ python -m venv venv
 3. Activate the environment
 
-Windows PowerShell:
+ Windows PowerShell:
 
-venv\Scripts\Activate.ps1
+ venv\Scripts\Activate.ps1
 4. Install dependencies
-pip install -r requirements.txt
+ pip install -r requirements.txt
 5. Install the Llama model
 
-Install Ollama and download the required model:
+ Install Ollama and download the required model:
 
-ollama pull llama3.2:3b
+ ollama pull llama3.2:3b
 6. Run the application
-streamlit run app.py
+ streamlit run app.py
+
 📂 Project Structure
 ai_research_study_assistant/
 │
@@ -75,34 +77,37 @@ ai_research_study_assistant/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+
 🔍 How It Works
-The user uploads a PDF.
-The document is split into smaller chunks.
-Chunks are converted into embeddings and stored in ChromaDB.
-MMR retrieves relevant document chunks.
-A Cross-Encoder reranks the retrieved results.
-The most relevant context is sent to Llama 3.2.
-The generated answer and source pages are displayed.
+1.The user uploads a PDF.
+2.The document is split into smaller chunks.
+3.Chunks are converted into embeddings and stored in ChromaDB.
+4.MMR retrieves relevant document chunks.
+5.A Cross-Encoder reranks the retrieved results.
+6.The most relevant context is sent to Llama 3.2.
+7.The generated answer and source pages are displayed.
+
 📈 Current Implementation
-PDF upload and text extraction
-Local embeddings
-ChromaDB vector storage
-MMR retrieval
-Cross-Encoder reranking
-Llama 3.2 integration
-Source page display
-Streamlit interface
+-PDF upload and text extraction
+-Local embeddings
+-ChromaDB vector storage
+-MMR retrieval
+-Cross-Encoder reranking
+-Llama 3.2 integration
+-Source page display
+-Streamlit interface
+
 🚀 Future Improvements
-Chat history
-Multiple PDF support
-Document summarization
-Better citations
-Streaming responses
-RAG evaluation
-Improved UI
-Deployment
+-Chat history
+-Multiple PDF support
+-Document summarization
+-Better citations
+-Streaming responses
+-RAG evaluation
+-Improved UI
+-Deployment
+
 👩‍💻 Author
 
 Mrunal Shinde
 
-B.Tech Computer Science Engineering
