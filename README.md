@@ -73,6 +73,7 @@ The application retrieves relevant information from an uploaded PDF and uses a l
                  │ Answer + Sources│
                  └─────────────────┘
 
+
 🛠️ Tech Stack
 Technology	Purpose
 Python	Core programming language
@@ -102,9 +103,9 @@ The model generates an answer using the retrieved context.
 The application displays the answer along with source pages.
 ## ⚙️ Installation
 
-### 1. Clone the repository
+## 1. Clone the repository
 
-```bash
+
 git clone https://github.com/mrunalshinde30/ai_research_study_assistant.git
 cd ai_research_study_assistant
 2. Create and activate a virtual environment
